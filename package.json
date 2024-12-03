@@ -1,0 +1,91 @@
+{
+	"name": "react-deep-table",
+	"version": "0.0.1",
+	"description": "react-deep-table is a powerful and customizable React library for creating feature-rich, dynamic tables with unlimited nested rows. Simplify complex data representation with intuitive expand/collapse functionality and seamless performance. Perfect for building scalable and interactive data grids in modern React applications",
+	"main": "./src/index.tsx",
+	"private": false,
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"dev": "vite",
+		"release-build": "vite build",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"test": "jest --coverage",
+		"performance-test": "lighthouse https://www.npmjs.com/package/react-share-pro --output json --output-path=./performance-report.json"
+	},
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.17.0",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-icons": "^5.4.0",
+		"react-scripts": "5.0.1",
+		"vite-plugin-dts": "^4.2.3",
+		"web-vitals": "^2.1.4"
+	},
+	"peerDependencies": {
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.9.0",
+		"@jest/globals": "^29.7.0",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"eslint": "^9.9.0",
+		"eslint-plugin-react-hooks": "^5.1.0-rc.0",
+		"eslint-plugin-react-refresh": "^0.4.9",
+		"globals": "^15.9.0",
+		"jest": "^27.5.1",
+		"lighthouse": "^12.2.1",
+		"typescript": "^5.5.3",
+		"typescript-eslint": "^8.0.1",
+		"vite": "^5.4.1"
+	},
+	"homepage": "https://github.com/hellojyoti03/react-deep-table",
+	"issues": {
+		"url": "https://github.com/hellojyoti03/react-deep-table/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hellojyoti03/react-deep-table.git"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"license": "MIT",
+	"keywords": [
+		"react",
+		"nested rows",
+		"table",
+		"hierarchical data",
+		"react deep table",
+		"react table",
+		"expandable table",
+		"nested table",
+		"data grid",
+		"react components",
+		"lazy loading",
+		"hierarchical grid",
+		"react tree table"
+	]
+}
