@@ -1,11 +1,11 @@
 # New Feature Proposal
 
-Thank you for considering contributing a new feature to `react-share-pro`! This document outlines how to propose a new feature, what information to include, and the process for getting it reviewed.
+Thank you for considering contributing a new feature to `react-deep-table`! This document outlines how to propose a new feature, what information to include, and the process for getting it reviewed.
 
 ## How to Propose a New Feature
 
 1. **Check Existing Features**:
-   - Before submitting a new feature proposal, please review the [Feature Requests](https://github.com/hellojyoti03/react-share-pro/issues) section to see if your idea has already been suggested. If you find a similar proposal, feel free to add your thoughts or support.
+   - Before submitting a new feature proposal, please review the [Feature Requests](https://github.com/hellojyoti03/react-deep-table/issues) section to see if your idea has already been suggested. If you find a similar proposal, feel free to add your thoughts or support.
 
 2. **Feature Description**:
    - Clearly describe the feature you want to propose. Include the following details:
@@ -56,6 +56,6 @@ A brief description of the feature and its purpose.
 
 ## Submission
 
-Once you have prepared your feature proposal, please submit it as an issue in the [Issues](https://github.com/hellojyoti03/react-share-pro/issues) section of the repository. Make sure to label it as a "Feature Request" to help us categorize it properly.
+Once you have prepared your feature proposal, please submit it as an issue in the [Issues](https://github.com/hellojyoti03/react-deep-table/issues) section of the repository. Make sure to label it as a "Feature Request" to help us categorize it properly.
 
-Thank you for your interest in improving `react-share-pro`! We look forward to your ideas.
+Thank you for your interest in improving `react-deep-table`! We look forward to your ideas.

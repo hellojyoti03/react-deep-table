@@ -1,11 +1,11 @@
 ## Issue Guidelines
 
-We appreciate your feedback and contributions to `react-share-pro`. To help us address issues more efficiently, please follow these guidelines when creating an issue:
+We appreciate your feedback and contributions to `react-deep-table`. To help us address issues more efficiently, please follow these guidelines when creating an issue:
 
 ### How to Report an Issue
 
 1. **Check Existing Issues**:
-   - Before submitting a new issue, please browse the [Issues](https://github.com/hellojyoti03/react-share-pro/issues) page to see if your problem has already been reported. If you find a similar issue, feel free to add any additional information or comments.
+   - Before submitting a new issue, please browse the [Issues](https://github.com/hellojyoti03/react-deep-table/issues) page to see if your problem has already been reported. If you find a similar issue, feel free to add any additional information or comments.
 
 2. **Create a Clear Title**:
    - Use a concise and descriptive title for your issue. This helps us understand the problem at a glance.
@@ -25,16 +25,14 @@ We appreciate your feedback and contributions to `react-share-pro`. To help us a
 
    ```javascript
    // Example code
-   <FacebookShareButton url={shareUrl} title={title}>
-     Share on Facebook
-   </FacebookShareButton>
+  <Table body={demoData} header={headerData} />
    ```
 
 5. **Specify Environment Details**:
    - Provide details about your development environment, such as:
      - Operating System (Windows, macOS, Linux).
      - Browser and version.
-     - Version of `react-share-pro` you are using.
+     - Version of `react-deep-table` you are using.
 
 6. **Feature Requests**:
    - If you have a suggestion for a new feature, please provide a detailed description. Explain how it would enhance the library and why it’s important.
@@ -69,7 +67,7 @@ What actually happened.
 **Environment:**
 - OS: [Your operating system]
 - Browser: [Browser and version]
-- Version of `react-share-pro`: [Version number]
+- Version of `react-deep-table`: [Version number]
 ```
 
-Thank you for helping us improve `react-share-pro`!
+Thank you for helping us improve `react-deep-table`!

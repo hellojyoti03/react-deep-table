@@ -1,10 +1,10 @@
-## Welcome to react-share-pro 👋
+## Welcome to react-deep-table 👋
 
-[![npm version](https://img.shields.io/npm/v/axios.svg?style=flat-square)](https://www.npmjs.org/package/react-share-pro) [![node version](https://img.shields.io/node/v/react-share-pro?color=blue&style=flat)](https://www.npmjs.com/package/react-share-pro) [![CDNJS](https://img.shields.io/cdnjs/v/axios.svg?style=flat-square)](https://cdnjs.com/libraries/react-share-pro) [![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=axios&query=$.install.pretty&label=install%20size&style=flat-square)](https://packagephobia.now.sh/result?p=react-share-pro) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/hellojyoti03/react-share-pro) [![Build status](https://img.shields.io/github/actions/workflow/status/hellojyoti03/react-share-pro/ci.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/hellojyoti03/react-share-pro/actions/workflows/ci.yml) ![npm bundle size](https://img.shields.io/bundlephobia/min/react-share-pro) [![downloads](https://img.shields.io/npm/dm/react-share-pro.svg?label=monthly%20downloads)](https://www.npmjs.com/package/react-share-pro) [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)](https://github.com/react-share-pro/blob/main/LICENSE) [![Known Vulnerabilities](https://snyk.io/test/npm/react-share-pro/badge.svg)](https://snyk.io/test/npm/react-share-pro)
+[![npm version](https://img.shields.io/npm/v/axios.svg?style=flat-square)](https://www.npmjs.org/package/react-deep-table) [![node version](https://img.shields.io/node/v/react-deep-table?color=blue&style=flat)](https://www.npmjs.com/package/react-deep-table) [![CDNJS](https://img.shields.io/cdnjs/v/axios.svg?style=flat-square)](https://cdnjs.com/libraries/react-deep-table) [![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=axios&query=$.install.pretty&label=install%20size&style=flat-square)](https://packagephobia.now.sh/result?p=react-deep-table) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/hellojyoti03/react-deep-table) [![Build status](https://img.shields.io/github/actions/workflow/status/hellojyoti03/react-deep-table/ci.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/hellojyoti03/react-deep-table/actions/workflows/ci.yml) ![npm bundle size](https://img.shields.io/bundlephobia/min/react-deep-table) [![downloads](https://img.shields.io/npm/dm/react-deep-table.svg?label=monthly%20downloads)](https://www.npmjs.com/package/react-deep-table) [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)](https://github.com/react-deep-table/blob/main/LICENSE) [![Known Vulnerabilities](https://snyk.io/test/npm/react-deep-table/badge.svg)](https://snyk.io/test/npm/react-deep-table)
 
 ## Introduction
 
-`react-share-pro` is a powerful library for adding customizable social media sharing buttons to your React applications, enabling seamless sharing of content across popular platforms .
+`react-deep-table` is a powerful and customizable React library for creating feature-rich, dynamic tables with unlimited nested rows. Simplify complex data representation with intuitive expand/collapse functionality and seamless performance. Perfect for building scalable and interactive data grids in modern React applications .
 
 ## Table of Contents
 
@@ -12,9 +12,7 @@
 - [Installation](#installation)
 - [Version](#version-information)
 - [Usage](#usage)
-- [Available Components](#available-components)
 - [Customization](#customization)
-- [Props](#props)
 - [License](#license)
 - [Contributing](#contributing)
 - [Issues](#issues)
@@ -34,23 +32,23 @@
 
 ## Installation
 
-You can install `react-share-pro` via npm or yarn:
+You can install `react-deep-table` via npm or yarn:
 
 ```bash
-npm install react-share-pro
+npm install react-deep-table
 ```
 
 or
 
 ```bash
-yarn add react-share-pro
+yarn add react-deep-table
 ```
 
 ## Version Information
 
 ### Current Version: 2.1.8
 
-This is an alpha version of `react-share-pro`. It includes the latest features and improvements but may also contain bugs or unfinished functionality. We encourage developers to test this version but recommend using it in non-production environments.
+This is an alpha version of `react-deep-table`. It includes the latest features and improvements but may also contain bugs or unfinished functionality. We encourage developers to test this version but recommend using it in non-production environments.
 
 ### Previous Stable Version: 2.1.5
 
@@ -58,55 +56,62 @@ If you prefer stability over new features, you may choose to use the latest stab
 
 ## Usage
 
-To use `react-share-pro`, import the desired components and render them in your React application. Below is a basic example:
+To use `react-deep-table`, import the desired components and render them in your React application. Below is a basic example:
 
 ### Basic Example
 
 ```javascript
 import React from "react";
 import {
-	FacebookShareButton,
-	TwitterShareButton,
-	EmailShareButton,
-} from "react-share-pro";
+Table
+} from "react-deep-table";
 
-const ShareComponent = () => {
-	const shareUrl = "https://yourwebsite.com";
-	const shareText = "Check out this amazing website!";
-	const isDefault = true;
+const TableComponent = () => {
+	const demoData = [
+    {
+      id: 1,
+      name: "Category 1",
+      value: "Value 1",
+      status: "Active",
+      date: "2024-12-03",
+      children: [
+        {
+          id: 2,
+          name: "Subcategory 1.1",
+          value: "Value 1.1",
+          status: "Inactive",
+          date: "2024-11-20",
+          children: [
+            { id: 3, name: "Item 1.1.1", value: "Value 1.1.1", status: "Active", date: "2024-11-10" },
+          ],
+        },
+        {
+          id: 4,
+          name: "Subcategory 1.2",
+          value: "Value 1.2",
+          status: "Active",
+          date: "2024-10-30",
+        },
+      ],
+    },
+  ];
+
+	const headerData = ['ID', 'Name', 'Value', 'Status', 'Date']
+  
+
 	return (
 		<div>
-			<h2>Share this page:</h2>
-			<FacebookShareButton url={shareUrl} text={shareText} isDefault={isDefault}>
-				Share on Facebook
-			</FacebookShareButton>
-			<TwitterShareButton url={shareUrl} text={shareText} isDefault={isDefault}>
-				Share on Twitter
-			</TwitterShareButton>
-			<EmailShareButton
-				subject='Amazing Website'
-				body='Check out this amazing website!'
-				isDefault={isDefault}>
-				Share via Email
-			</EmailShareButton>
+			 <Table body={demoData} header={headerData} />
 		</div>
 	);
 };
 
-export default ShareComponent;
+export default TableComponent;
 ```
 
-## Available Components
-
-`react-share-pro` includes the following components:
-
-- **FacebookShareButton**: A button to share on Facebook.
-- **TwitterShareButton**: A button to share on Twitter.
-- **EmailShareButton**: A button to share on Email.
-- **InstagramShareButton**: A button to share on Instagram.
 ## Customization
 
-`react-share-pro` customize the buttons by applying your own styles and configurations. Here’s how you can enhance the appearance and behavior of your buttons:
+`react-deep-table` customize the buttons by applying your own styles and configurations. Here’s how you can enhance the appearance and behavior of your buttons:
 
 ### Custom Children
 
@@ -115,128 +120,32 @@ You can pass any React node as children to the share buttons, allowing you to us
 ### Example
 
 ```javascript
-import React from "react";
-import FacebookIcon from "./icons/facebook-icon.png"; // Assuming you have a PNG icon
-
-const ShareComponent = () => {
-	const shareUrl = "https://yourwebsite.com";
-	const shareText = "Check out this amazing website!";
-
-	return (
-		<div>
-			<h2>Share this page:</h2>
-			<FacebookShareButton url={shareUrl} text={shareText} isDefault={false}>
-				<img
-					src={FacebookIcon}
-					alt='Facebook'
-					style={{ width: "20px", marginRight: "5px" }}
-				/>
-				Share on Facebook
-			</FacebookShareButton>
-		</div>
-	);
-};
-
-export default ShareComponent;
-```
-
-### costum CSS Example
-
-```css
-.share-button {
-	background-color: #3b5998; /* Facebook blue */
-	color: white;
-	padding: 10px 15px;
-	border-radius: 5px;
-	text-align: center;
-	cursor: pointer;
-	transition: background-color 0.3s;
+let COSTUM_STYLE_OBJECT = {
+  border: '1px solid #ddd',
+  headerColor: "#007BFF",
+  footerColor: "#28A745",
+  bodyColor: "#F8F9FA",
+  tableColor : "#FFFFFF",
 }
 
-.share-button:hover {
-	background-color: #365e8a; /* Darker Facebook blue */
-}
+
+<Table costumStyle={COSTUM_STYLE_OBJECT}  costumClass = 'react-deep-table'>
 ```
-
-### Applying Custom Styles
-
-You can apply these styles in your components like this:
-
-```javascript
-<FacebookShareButton
-	className='share-button'
-	url={shareUrl}
-	title={title}
-	isDefault={false}>
-	Share on Facebook
-</FacebookShareButton>
-```
-
-## Props
-
-Each `react-share-pro` component accepts specific props:
-
-### FacebookShareButton
-
-- **url** (string): The URL you want to share or window.location.href .
-- **text** (string): The title for the shared content.
-
-### TwitterShareButton
-
-- **url** (string): The URL you want to share or window.location.href.
-- **text** (string): The title for the shared content.
-
-### EmailShareButton
-
-- **subject** (string): The subject line for the email.
-- **body** (string): The body content of the email.
-
-### InstagramShareButton
-
-- **text** (string): The text content for the instagram.
-
-### Common Props (optional)
-
-- **children** (node): The content inside the button (can be text or an icon).
-- **className** (string, optional): Custom CSS class for additional styling.
-- **tab** (string, optional): The target for the email link (default is '\_blank').
-- **isDefault** (boolean): Whether to use the default Facebook share button or a custom one
-
-### Examples
-
-#### Facebook Share Example
-
-```javascript
-<FacebookShareButton url='https://yourwebsite.com' text='Check this out!'>
-	Share on Facebook
-</FacebookShareButton>
-```
-
-#### Email Share Example
-
-```javascript
-<EmailShareButton
-	subject='Amazing Website'
-	body='Check out this amazing website!'>
-	Share via Email
-</EmailShareButton>
-```
-
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/hellojyoti03/react-share-pro/blob/main/LICENSE) file for more information.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/hellojyoti03/react-deep-table/blob/main/LICENSE) file for more information.
 
 ## Contributing
 
-We welcome contributions! Please read our [CONTRIBUTING.md](https://github.com/hellojyoti03/react-share-pro/blob/main/CONTRIBUTING.md) for guidelines on how to get started.
+We welcome contributions! Please read our [CONTRIBUTING.md](https://github.com/hellojyoti03/react-deep-table/blob/main/CONTRIBUTING.md) for guidelines on how to get started.
 
 ## Issues
 
-If you encounter any issues, please read our [ISSUES.md](https://github.com/hellojyoti03/react-share-pro/blob/main/ISSUES.md) for guidlines how to submit a issue .
+If you encounter any issues, please read our [ISSUES.md](https://github.com/hellojyoti03/react-deep-table/blob/main/ISSUES.md) for guidlines how to submit a issue .
 
 ## New_Feature
 
-We welcome contributing a new feature to `react-share-pro` Please read our [NEW_FEATURE.md](https://github.com/hellojyoti03/react-share-pro/blob/main/NEW_FEATURE.md) for guidelines for how to propose a new feature.
+We welcome contributing a new feature to `react-deep-table` Please read our [NEW_FEATURE.md](https://github.com/hellojyoti03/react-deep-table/blob/main/NEW_FEATURE.md) for guidelines for how to propose a new feature.
 
 ## Contact
 
